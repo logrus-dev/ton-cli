@@ -1,0 +1,46 @@
+{
+  "name": "@logrus/ton-cli",
+  "version": "1.0.1",
+  "description": "Simple interactive CLI for basic operations with TON blockchain.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/logrus-dev/ton-cli.git"
+  },
+  "keywords": [
+    "TON",
+    "Cryptocurrency",
+    "Telegram",
+    "CLI",
+    "npx"
+  ],
+  "main": "dist/index.js",
+  "bin": {
+    "ton-cli": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "Readme.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node ./dist/index.js",
+    "prepare": "tsc"
+  },
+  "author": "logrus.dev",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "convict": "^6.2.3",
+    "inquirer": "^8.2.5",
+    "ora": "^5.4.1",
+    "ton": "^12.1.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/convict": "^6.1.1",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.11",
+    "@types/uuid": "^9.0.0",
+    "typescript": "^4.9.3"
+  }
+}

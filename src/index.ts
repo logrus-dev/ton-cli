@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 require("buffer");
 import inquirer from 'inquirer';
 import { v4 as uuidv4 } from 'uuid';
